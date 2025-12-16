@@ -66,7 +66,7 @@ def get_extensions():
     ext_modules = [
         Extension(
             sources=src[1],
-            include_dirs=src[0],
+            include_dirs=[src[0]],
             extra_compile_args=extra_compile_args,
         )
     ]
